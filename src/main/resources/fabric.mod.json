@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "currendcy",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Currendcy",
+  "description": "Minecraft currency power by Ender",
   "authors": [
-    "Me!"
+    "eveld"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/eveld/currendcy"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/currendcy/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.eveld.currendcy.Currendcy"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "currendcy.mixins.json"
   ],
 
   "depends": {

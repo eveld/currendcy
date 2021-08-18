@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "block/anvil",
+    "up": "block/blast_furnace_top",
+    "east": "block/blast_furnace_side",
+    "west": "block/blast_furnace_side",
+    "north": "block/blast_furnace_front_on",
+    "south": "block/cauldron_side"
+  }
+}
