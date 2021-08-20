@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "currendcy:block/vendor_display", "uvlock": false },
+    "facing=east":  { "model": "currendcy:block/vendor_display", "y":  90, "uvlock": false },
+    "facing=south": { "model": "currendcy:block/vendor_display", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "currendcy:block/vendor_display", "y": 270, "uvlock": false }
+  }
+}

@@ -9,9 +9,15 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.Hand;
 
 public class Card extends Item {
+  private int balance;
  
   public Card(Settings settings) {
       super(settings);
+      this.balance = 0;
+  }
+
+  public int getBalance() {
+    return this.balance;
   }
 
   @Override

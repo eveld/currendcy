@@ -1,0 +1,17 @@
+{
+  "insert_card": {
+    "sounds": [
+      "currendcy:insert_card"
+    ]
+  },
+  "eject_card": {
+    "sounds": [
+      "currendcy:eject_card"
+    ]
+  },
+  "click_display": {
+    "sounds": [
+      "currendcy:click_display"
+    ]
+  }
+}

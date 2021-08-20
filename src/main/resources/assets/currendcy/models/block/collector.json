@@ -2,10 +2,10 @@
   "parent": "block/cube",
   "textures": {
     "down": "block/anvil",
-    "up": "block/blast_furnace_top",
-    "east": "block/blast_furnace_side",
-    "west": "block/blast_furnace_side",
-    "north": "block/blast_furnace_front_on",
-    "south": "block/cauldron_side"
+    "up": "currendcy:block/collector_top",
+    "east": "currendcy:block/collector_side",
+    "west": "currendcy:block/collector_side",
+    "north": "currendcy:block/collector_front_off",
+    "south": "currendcy:block/collector_back"
   }
 }

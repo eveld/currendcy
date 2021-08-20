@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.eveld.currendcy.Currendcy"
+    ],
+    "client": [
+      "net.eveld.currendcy.CurrendcyClient"
     ]
   },
   "mixins": [
