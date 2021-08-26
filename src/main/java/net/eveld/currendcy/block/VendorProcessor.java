@@ -45,6 +45,8 @@ public class VendorProcessor extends BlockWithEntity {
         world.playSound(null, pos, Currendcy.EJECT_CARD_SOUND, SoundCategory.BLOCKS, 1f, 1f);
         player.getInventory().insertStack(new ItemStack(card, 1));
 
+        
+
         // Remove the card and set card inserted to false
         world.setBlockState(pos, state.with(CARD_INSERTED, false));
         card = null;
