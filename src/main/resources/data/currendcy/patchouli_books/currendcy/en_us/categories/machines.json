@@ -1,0 +1,6 @@
+{
+	"name": "Machines",
+	"description": "Available machines",
+	"icon": "currendcy:collector",
+  "sortnum": 2
+}

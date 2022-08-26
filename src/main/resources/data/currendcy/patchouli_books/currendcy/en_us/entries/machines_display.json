@@ -1,0 +1,16 @@
+{
+  "name": "Display",
+  "icon": "currendcy:display",
+  "category": "currendcy:machines",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This explains what the display is and how to use it."
+    },
+    {
+        "type": "patchouli:crafting",
+        "recipe": "currendcy:display",
+        "text": "Recipe for the display."
+    }
+  ]
+}

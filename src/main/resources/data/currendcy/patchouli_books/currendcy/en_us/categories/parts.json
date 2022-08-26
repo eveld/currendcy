@@ -1,0 +1,6 @@
+{
+	"name": "Parts",
+	"description": "The available parts contained in the currendcy mod.",
+	"icon": "currendcy:chip",
+  "sortnum": 1
+}

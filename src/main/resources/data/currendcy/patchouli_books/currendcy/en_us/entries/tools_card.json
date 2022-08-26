@@ -1,0 +1,16 @@
+{
+  "name": "Card",
+  "icon": "currendcy:card",
+  "category": "currendcy:tools",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This explains what the card is and how to use it."
+    },
+    {
+        "type": "patchouli:crafting",
+        "recipe": "currendcy:card",
+        "text": "Recipe for the card."
+    }
+  ]
+}

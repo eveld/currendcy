@@ -1,0 +1,16 @@
+{
+  "name": "Dispenser",
+  "icon": "currendcy:dispenser",
+  "category": "currendcy:machines",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This explains what the dispenser is and how to use it."
+    },
+    {
+        "type": "patchouli:crafting",
+        "recipe": "currendcy:dispenser",
+        "text": "Recipe for the dispenser."
+    }
+  ]
+}

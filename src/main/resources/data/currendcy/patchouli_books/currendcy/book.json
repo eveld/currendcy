@@ -1,0 +1,13 @@
+{
+	"version": 1,
+	"name": "Book of Ender",
+	"landing_text": "Introduction to currendcy.",
+  "book_texture": "currendcy:textures/gui/book/guide_book.png",
+  "model": "currendcy:guide_book",
+	"nameplate_color": "111111",
+	"creative_tab": "currendcy.general",
+	"dont_generate_book": true,
+	"custom_book_item": "currendcy:guide_book",
+	"show_progress": false,
+	"use_blocky_font": true
+}

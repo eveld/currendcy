@@ -1,17 +1,12 @@
 {
-  "insert_card": {
+  "display_click": {
     "sounds": [
-      "currendcy:insert_card"
+      "currendcy:display_click"
     ]
   },
-  "eject_card": {
+  "collector_active": {
     "sounds": [
-      "currendcy:eject_card"
-    ]
-  },
-  "click_display": {
-    "sounds": [
-      "currendcy:click_display"
+      "currendcy:collector_active"
     ]
   }
 }

@@ -1,8 +1,8 @@
 {
   "variants": {
-    "facing=north": { "model": "currendcy:block/vault", "uvlock": true },
-    "facing=east":  { "model": "currendcy:block/vault", "y":  90, "uvlock": true },
-    "facing=south": { "model": "currendcy:block/vault", "y": 180, "uvlock": true },
-    "facing=west":  { "model": "currendcy:block/vault", "y": 270, "uvlock": true }
+    "facing=north": { "model": "currendcy:block/vault", "uvlock": false },
+    "facing=east":  { "model": "currendcy:block/vault", "y":  90, "uvlock": false },
+    "facing=south": { "model": "currendcy:block/vault", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "currendcy:block/vault", "y": 270, "uvlock": false }
   }
 }

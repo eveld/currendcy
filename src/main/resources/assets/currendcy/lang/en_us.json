@@ -1,7 +1,10 @@
 {
   "itemGroup.currendcy.general": "Currendcy",
-  "block.currendcy.vault": "Vault",
-  "block.currendcy.collector": "Collector",
-  "block.currendcy.vendor": "Vendor",
-  "item.currendcy.card": "Card"
+  "block.currendcy.collector": "Ender Collector",
+  "block.currendcy.display": "Ender Display",
+  "block.currendcy.dispenser": "Ender Dispenser",
+  "block.currendcy.vault": "Ender Vault",
+  "item.currendcy.card": "Ender Card",
+  "item.currendcy.chip": "Ender Chip",
+  "item.currendcy.guide_book": "Book of Ender"
 }

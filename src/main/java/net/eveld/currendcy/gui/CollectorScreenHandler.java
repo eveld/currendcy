@@ -5,24 +5,34 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.screen.ArrayPropertyDelegate;
+import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.eveld.currendcy.Currendcy;
 
 public class CollectorScreenHandler extends ScreenHandler {
   private final Inventory inventory;
+  PropertyDelegate progressDelegate;
+  PropertyDelegate currentSlotDelegate;
 
   public CollectorScreenHandler(int syncId, PlayerInventory playerInventory) {
-    this(syncId, playerInventory, new SimpleInventory(10));
+    this(syncId, playerInventory, new SimpleInventory(9), new ArrayPropertyDelegate(1), new ArrayPropertyDelegate(1));
   }
 
-  public CollectorScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
+  public CollectorScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate progressDelegate, PropertyDelegate currentSlotDelegate) {
     super(Currendcy.COLLECTOR_SCREEN_HANDLER, syncId);
-    checkSize(inventory, 10);
+    checkSize(inventory, 9);
     this.inventory = inventory;
+    this.progressDelegate = progressDelegate;
+    this.currentSlotDelegate = currentSlotDelegate;
 
     //some inventories do custom logic when a player opens it.
     inventory.onOpen(playerInventory.player);
+    
+    // tell the screenhandler about the delegate, so it will sync the data inside.
+    this.addProperties(progressDelegate);
+    this.addProperties(currentSlotDelegate);
 
     int r;
     int c;
@@ -35,9 +45,6 @@ public class CollectorScreenHandler extends ScreenHandler {
         i++;
       }
     }
-
-    // The card slot
-    this.addSlot(new Slot(inventory, 9, 120, 35));
 
     //The player inventory
     for (r = 0; r < 3; ++r) {
@@ -55,6 +62,14 @@ public class CollectorScreenHandler extends ScreenHandler {
   @Override
   public boolean canUse(PlayerEntity player) {
     return this.inventory.canPlayerUse(player);
+  }
+
+  public int getProgress(){
+    return progressDelegate.get(0);
+  }
+
+  public ItemStack getCurrentSlot(){
+    return this.inventory.getStack(currentSlotDelegate.get(0));
   }
 
   @Override

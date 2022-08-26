@@ -1,0 +1,16 @@
+{
+  "name": "Collector",
+  "icon": "currendcy:collector",
+  "category": "currendcy:machines",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This explains what the collector is and how to use it."
+    },
+    {
+        "type": "patchouli:crafting",
+        "recipe": "currendcy:collector",
+        "text": "Recipe for the collector."
+    }
+  ]
+}

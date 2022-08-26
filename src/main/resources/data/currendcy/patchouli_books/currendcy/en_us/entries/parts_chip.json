@@ -1,0 +1,16 @@
+{
+  "name": "Chip",
+  "icon": "currendcy:chip",
+  "category": "currendcy:parts",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This explains what the chip is and how to use it."
+    },
+    {
+        "type": "patchouli:crafting",
+        "recipe": "currendcy:chip",
+        "text": "Recipe for the chip."
+    }
+  ]
+}
